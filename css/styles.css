@@ -499,6 +499,7 @@ fill: var(--pressed-color);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
             margin-right: 24px;
+            color: #ffffff;
         }
         .subscribe-input::placeholder{
             font-weight: 400;
@@ -658,11 +659,11 @@ fill: var(--pressed-color);
     visibility var(--transit-time)
     ;
 }
+/* ------------------------------------------------------------modal---------------------------------------------------------------- */
 .modal{
 
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     width: 408px;
-    min-height: 576px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -677,15 +678,17 @@ fill: var(--pressed-color);
     transform: translate(-50%,-50%) scaleY(0) rotate(-90deg);
 }
 .modal-close-btn{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
+    top: 24px;
+    right: 24px;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    margin-left: auto;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -714,7 +717,7 @@ fill: var(--pressed-color);
     background: var(--pressed-color);
     border-radius: 2px;
 }
-/* --------------------------------modal--------------------------- */
+
 .modal-title{
     font-weight: 500;
     font-size: 16px;
@@ -722,7 +725,6 @@ fill: var(--pressed-color);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--first-brand-color);
-    margin-top: 24px;
     margin-bottom: 16px;
 }
 .modal-label{
@@ -766,6 +768,7 @@ fill: var(--pressed-color);
     border-radius: 4px;
     cursor: pointer;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   border: none;
 }
 .modal-button:hover,
 .modal-button:focus{
@@ -795,6 +798,9 @@ fill: var(--pressed-color);
 }
 .textarea-modal:focus{
     border: 1px solid var(--secondary_brand-color)
+}
+.policy-link{
+    color: var(--secondary_brand-color);
 }
 .modal-check {
     margin-bottom: 24px;
