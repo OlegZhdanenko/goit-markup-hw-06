@@ -89,7 +89,7 @@ button{
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    padding: 80px 35px 40px 40px;
+    padding: 24px 24px 40px 40px;
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -532,14 +532,12 @@ fill: var(--pressed-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    width: auto;
+    align-items: center;
     margin: 0 auto;
-    gap: 100px;
 }
 .footer-wrap{
-    /* width: 264px; */
-    width: 100%;
+    width: 268px;
+    margin-bottom: 72px;
 }
 .footer-text {
     display: block;
@@ -570,6 +568,9 @@ justify-content: center;
     color: var(--light-color);
 }
 /* ----------------------------footer-soc ----------------------------*/
+.footer-soc-wrap{
+    margin-bottom: 72px;
+}
 .soc-title{
     text-align: center;
     font-family: 'Roboto';
@@ -613,7 +614,7 @@ justify-content: center;
             width: 100%;
         }
         .subscribe-wrap{
-            width: 398px;
+            width: 100%;
         }
         .subscribe-text {
             text-align: center;
